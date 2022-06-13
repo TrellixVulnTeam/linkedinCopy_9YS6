@@ -6,16 +6,48 @@ $light_text:rgba(0,0,0,0.6);
 $font400:400;
 $font600:600;
 $lineheight15 :1.5;
+$bordersize :solid rgb(255 255 255 / 10%);
+
+
+.Box {
+    background: white;
+    border-radius: 2%;
+    /* border: solid rgba(255, 255, 255, 0.1); */
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.discover_paragraph{
+ width: 86%;
+font-size: 12px;
+margin: 0;
+
+}
+.padding_left{
+    padding-left:3%;
+}
 .full_width{
+    
     width: 100%;
+}
+.width97{
+    width:97%;
+}
+.full_height{
+    height:100%;
 }
 .width90{
     width: 90%;
 }
-bh-toolbar,bh-Search,bh-Posts,bh-feedComp
+bh-toolbar,bh-Search,bh-Posts,bh-feedComp,bh-left_profile_component,bh-DiscoverMore
 {
     width: 100%;
     height: 100%;
+}
+.toolbar{
+    background:white;
+}
+.searchbar{
+    width: 97%;
+    height: 90%;
 }
 .mat-form-field-appearance-outline .mat-form-field-wrapper {
      margin:0;
@@ -35,6 +67,10 @@ p{
     margin:5px 0 0 0;
     padding: 0;
     width: 47%;
+}
+.postsTxt{
+    color:rgba(0,0,0,0.9);
+    margin: 13px 0px 14px 0px;
 }
 h3{
     margin: 0;
@@ -70,6 +106,9 @@ h3{
 }
 .onhover :active{
     background-color: rgba(0,0,0,0.6);
+}
+.onhover :hover{
+    background-color: rgba(184, 16, 16, 0.911);
 }
 a:hover{
     text-decoration: underline;
@@ -148,6 +187,20 @@ button{
     background-color: #fafafa;
     border-radius: 50px;
 }
+.inputSearch{
+       border:1px solid gray !important;
+       border-radius: 50px!important;
+}
+.borderBox{
+    background:white;
+    border-radius: 2%;
+    border:$bordersize;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.width88{
+     width: 88%;
+}
+
           
 // .sideswidth{
 //     width: 17%;

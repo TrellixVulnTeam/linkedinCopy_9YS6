@@ -1,22 +1,14 @@
-<div fxLayout="row wrap" style="background:white;" fxLayoutAlign="start stretch" [fxShow]="true">
-  <div fxLayout="column wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true">
-    <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="start stretch" [fxShow]="true">
-      <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true"><img [src]="&apos;https://media-exp1.licdn.com/dms/image/D5635AQFi4i7KgaACgQ/profile-framedphoto-shrink_100_100/0/1644758691348?e=1655175600&amp;v=beta&amp;t=q8Jm42iKni3PhE_XDfsMTBUQ7ei4JaoAI0uE_QXU5bo&apos;" style="width: 45px;height: 45px;border: white solid;border-radius: 50%;"></div>
-      <div>
-        <input style="color: #666666;
-    border-radius: 30px;
-    height: 48px;
-    border-color: rgba(0,0,0,0.6);
-    font-size: small;
-    font-weight: bold;
-    width:438px;" placeholder="Start a post">
-      </div>
+<div fxLayout="row wrap" style="background:white;height:100%;" class="full_width" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column wrap" style="width:100%;" fxLayoutAlign="space-around stretch" [fxShow]="true">
+    <div fxLayout="row wrap" class="full_width" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="column wrap" style="width:12%;" fxLayoutAlign="start center" [fxShow]="true"><img [src]="&apos;https://media-exp1.licdn.com/dms/image/D5635AQFi4i7KgaACgQ/profile-framedphoto-shrink_100_100/0/1644758691348?e=1655175600&amp;v=beta&amp;t=q8Jm42iKni3PhE_XDfsMTBUQ7ei4JaoAI0uE_QXU5bo&apos;" style="width: 45px;height: 45px;border: white solid;border-radius: 50%;"></div>
+      <div fxLayout="column wrap" class="inputSearch width88" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-button class="full_height full_width">Button</button></div>
     </div>
-    <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true">
+      <div fxLayout="column wrap" class="onhover" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-icon style="color: #378fe9;">image</mat-icon>
-          <div>
+          <div style="    width: 92%;">
             <span>Photo</span>
           </div>
         </div>
@@ -25,7 +17,7 @@
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-icon style="color: #5f9b41;">slideshow</mat-icon>
           <div>
-            <span>Photo</span>
+            <span>Video</span>
           </div>
         </div>
       </div>
@@ -33,7 +25,7 @@
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-icon style="color: #c37d15;">today</mat-icon>
           <div>
-            <span>Photo</span>
+            <span>Calendar</span>
           </div>
         </div>
       </div>
@@ -41,7 +33,7 @@
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
           <mat-icon style="color:#e16745;">description</mat-icon>
           <div>
-            <span>Photo</span>
+            <span>File</span>
           </div>
         </div>
       </div>

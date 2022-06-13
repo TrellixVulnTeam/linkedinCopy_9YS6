@@ -15,13 +15,13 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
 //append_imports_end
 
 @Component({
-  selector: 'bh-Toolbar',
-  templateUrl: './Toolbar.template.html',
+  selector: 'bh-discover',
+  templateUrl: './discover.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class ToolbarComponent {
+export class discoverComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -38,7 +38,7 @@ export class ToolbarComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_iFySQxfRO70NzmMP(bh);
+      this.sd_L0fBhA4WQaQSRLLS(bh);
     }
   }
 
@@ -50,24 +50,24 @@ export class ToolbarComponent {
     //append_listeners
   }
 
-  sd_iFySQxfRO70NzmMP(bh) {
+  sd_L0fBhA4WQaQSRLLS(bh) {
     try {
-      bh = this.sd_nBQhEpxThPBpRNsI(bh);
-      //appendnew_next_sd_iFySQxfRO70NzmMP
+      bh = this.sd_2vX39c8uGimroiT8(bh);
+      //appendnew_next_sd_L0fBhA4WQaQSRLLS
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_iFySQxfRO70NzmMP');
+      return this.errorHandler(bh, e, 'sd_L0fBhA4WQaQSRLLS');
     }
   }
 
-  //appendnew_flow_ToolbarComponent_start
+  //appendnew_flow_discoverComponent_start
 
-  sd_nBQhEpxThPBpRNsI(bh) {
+  sd_2vX39c8uGimroiT8(bh) {
     try {
-      //appendnew_next_sd_nBQhEpxThPBpRNsI
+      //appendnew_next_sd_2vX39c8uGimroiT8
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_nBQhEpxThPBpRNsI');
+      return this.errorHandler(bh, e, 'sd_2vX39c8uGimroiT8');
     }
   }
 
@@ -93,5 +93,5 @@ export class ToolbarComponent {
       throw e;
     }
   }
-  //appendnew_flow_ToolbarComponent_Catch
+  //appendnew_flow_discoverComponent_Catch
 }
