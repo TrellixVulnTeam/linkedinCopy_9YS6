@@ -64,6 +64,32 @@ export class feedCompComponent {
 
   sd_r2aXtRyYive92F8c(bh) {
     try {
+      this.page.feeds = [
+        {
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAnOfzna3osNi9z7DxrGmcgyFtMbd0aoDDA&usqp=CAU',
+          name: 'andrew twon',
+          story: 'Recruter of the people',
+        },
+        {
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAnOfzna3osNi9z7DxrGmcgyFtMbd0aoDDA&usqp=CAU',
+          name: 'andrew twon',
+          story: 'Recruter of the people',
+        },
+        {
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAnOfzna3osNi9z7DxrGmcgyFtMbd0aoDDA&usqp=CAU',
+          name: 'andrew twon',
+          story: 'Recruter of the people',
+        },
+        {
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAnOfzna3osNi9z7DxrGmcgyFtMbd0aoDDA&usqp=CAU',
+          name: 'andrew twon',
+          story: 'Recruter of the people',
+        },
+      ];
       //appendnew_next_sd_r2aXtRyYive92F8c
       return bh;
     } catch (e) {

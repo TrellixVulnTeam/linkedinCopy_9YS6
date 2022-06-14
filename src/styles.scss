@@ -2,12 +2,23 @@
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&family=Poppins:ital,wght@0,400;0,700;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,200&family=Titillium+Web:ital,wght@0,200;1,200&display=swap');
 $light_text:rgba(0,0,0,0.6);
 $font400:400;
 $font600:600;
 $lineheight15 :1.5;
 $bordersize :solid rgb(255 255 255 / 10%);
 
+*{
+    // font-family: 'Nunito Sans', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+}
+.marginLeft{
+margin-left: 10px;
+}
 
 .Box {
     background: white;
@@ -66,7 +77,9 @@ bh-toolbar,bh-Search,bh-Posts,bh-feedComp,bh-left_profile_component,bh-DiscoverM
 p{
     margin:5px 0 0 0;
     padding: 0;
-    width: 47%;
+    width: 63%;
+    color:#915907;
+    text-align:center;
 }
 .postsTxt{
     color:rgba(0,0,0,0.9);
@@ -167,6 +180,7 @@ a{
 }
 }
 .icons{
+    height: 55px;
     icon{
          color:#666666;
     }
@@ -199,6 +213,40 @@ button{
 }
 .width88{
      width: 88%;
+}
+.mat-button{
+    text-align: left !important;
+}
+.PostsBtn{
+    background-color:transparent;
+    color:#666666;
+    }
+.fontIcons{
+    width: 24px;
+    height: 24px;
+}
+.search{
+    height: 90%;
+    width: 270px;
+    background-color: #eef3f8;
+    border-radius: 6px;
+}
+.postimage{
+    width: 55px;
+    height: 55px;
+    border-radius:50%
+}
+.width39{
+    width: 39px;
+    height:39;
+}
+.height39{
+    height:39px;
+}
+.feedsimg{
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
 }
 
           

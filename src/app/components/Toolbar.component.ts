@@ -22,6 +22,8 @@ import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.ser
   ],
 })
 export class ToolbarComponent {
+  @Output('callFromChildComponent')
+  public callFromChildComponent: any = new EventEmitter<any>();
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -60,14 +62,49 @@ export class ToolbarComponent {
     }
   }
 
+  hideShowSidenav(...others) {
+    try {
+      var bh: any = this.__page_injector__
+        .get(SDPageCommonService)
+        .constructFlowObject(this);
+      bh.input = {};
+      bh.local = {};
+      bh = this.sd_AUzNQ1l7LCjKLTY7(bh);
+      //appendnew_next_hideShowSidenav
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_z7pshiyibBLOL67g');
+    }
+  }
+
   //appendnew_flow_ToolbarComponent_start
 
   sd_nBQhEpxThPBpRNsI(bh) {
     try {
+      this.page.iconsArr = [
+        { name: 'HOME', icon: 'home', color: 'color:#666666;' },
+        { name: 'My Network', icon: 'group', color: 'color:#666666;' },
+        { name: 'Jobs', icon: 'work', color: 'color:#666666;' },
+        { name: 'Messaging', icon: 'comment', color: 'color:#666666;' },
+        {
+          name: 'Notifications',
+          icon: 'notifications_none',
+          color: 'color:#666666;',
+        },
+      ];
       //appendnew_next_sd_nBQhEpxThPBpRNsI
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_nBQhEpxThPBpRNsI');
+    }
+  }
+
+  sd_AUzNQ1l7LCjKLTY7(bh) {
+    try {
+      bh.pageOutput.callFromChildComponent.emit();
+      //appendnew_next_sd_AUzNQ1l7LCjKLTY7
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_AUzNQ1l7LCjKLTY7');
     }
   }
 

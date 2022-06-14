@@ -1,54 +1,42 @@
 <div fxLayout="row wrap" style="width:100%;" fxLayoutAlign="center stretch" [fxShow]="true">
   <div fxLayout="column wrap" fxFlex="77" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-icon fxHide="true" fxHide.md="false" (click)="hideShowSidenav()" fxHide.sm="false" fxHide.xs="false">menu</mat-icon>
     <div fxLayout="row wrap" class="icons" fxLayoutAlign="space-between center" [fxShow]="true">
-      <div fxLayout="column wrap" style="width:23%;" fxLayoutAlign="start stretch" [fxShow]="true">
-        <div fxLayout="row wrap" style="height: 53%;width:100%;" fxLayoutAlign="start stretch" [fxShow]="true"><img [src]="&apos;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLvzohwGe0n2ZCWXmXavzhpVEOILdK_5Tiw&amp;usqp=CAU&apos;" style="width: 39px;height:39;"><label style="height:39px;width:39px;">
-            <input placeholder="Search" class="full_width" style="height: 90%;width:160px"></label></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" class="full_width" fxLayoutAlign="space-around center" [fxShow]="true"><img [src]="&apos;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLvzohwGe0n2ZCWXmXavzhpVEOILdK_5Tiw&amp;usqp=CAU&apos;" style="width: 39px;height:39;">
+          <div fxLayout="column wrap" class="full_height" fxLayoutAlign="center center" [fxShow]="false" fxShow.sm="True">
+            <mat-icon>search</mat-icon><label fxShow.md="False" fxShow.md-xs="false" fxHide.md="true" fxHide.sm="true">
+              Search</label>
+          </div>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" fxShow.sm="false" fxHide.xs="true"><label class="height39">
+              <input placeholder="Search" class="full_width search"></label></div>
+        </div>
       </div>
       <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
         <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-          <div fxLayout="column wrap" style="width: 500px;" fxLayoutAlign="center stretch" [fxShow]="true">
-            <div fxLayout="row wrap" class="icons" fxLayoutAlign="space-around stretch" [fxShow]="true">
-              <div fxLayout="column wrap" class="onhover" fxLayoutAlign="start center" [fxShow]="true">
-                <mat-icon style=" color:#666666;">home</mat-icon>
-                <div>
-                  HOME</div>
+          <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true">
+            <div fxLayout="row wrap" class="full_width icons" fxLayoutGap="1em" fxLayoutAlign="space-around stretch" [fxShow]="true">
+              <div fxLayout="column wrap" class="onhover" fxLayoutAlign="center center" [fxShow]="true" *ngFor="let icon of page.iconsArr">
+                <mat-icon style="{{icon.color}}">{{icon.icon}}</mat-icon><label fxHide.md="true" fxHide.sm="true" fxHide.xs="true">
+                  {{icon.name}}</label>
               </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
-                <mat-icon style=" color:#666666;">group</mat-icon>
-                <div>
-                  my Network</div>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
-                <mat-icon style=" color:#666666;">work</mat-icon>
-                <div>
-                  Jobs</div>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
-                <mat-icon style=" color:#666666;">comment</mat-icon>
-                <div>
-                  messaging</div>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
-                <mat-icon style=" color:#666666;">notifications_none</mat-icon>
-                <div>
-                  Notifications</div>
-              </div>
-              <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true"><img [src]="&apos;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLvzohwGe0n2ZCWXmXavzhpVEOILdK_5Tiw&amp;usqp=CAU&apos;" style="width:24px">
-                <div>
-                  Me</div>
-              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true"><img [src]="&apos;https://media-exp1.licdn.com/dms/image/D5635AQFi4i7KgaACgQ/profile-framedphoto-shrink_100_100/0/1644758691348?e=1655276400&amp;v=beta&amp;t=cd2CkZzcTPfII0-aWpYl9QQIxaLvBZEy6NSN70pUok4&apos;" style="width:24px"><label fxHide.md="true" fxHide.sm="true" fxHide.xs="true">
+                  Me</label></div>
             </div>
           </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="row wrap" class="head_paragraph" fxLayoutAlign="space-between stretch" [fxShow]="true">
+          <div fxLayout="column wrap" style="height: 55px;" fxLayoutAlign="center stretch" [fxShow]="true">
+            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="false" fxShow.xs="true">
+              <div fxLayout="column wrap" class="full_height full_width" fxLayoutAlign="center center" [fxShow]="true">
+                <mat-icon>more_horiz</mat-icon>
+              </div>
+            </div>
+            <div fxLayout="row wrap" class="full_height head_paragraph" fxLayoutAlign="space-around stretch" [fxShow]="true" fxHide.xs="true">
               <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
-                <mat-icon style=" color:#666666;">apps</mat-icon>
-                <div>
-                  Work</div>
+                <mat-icon style=" color:#666666;">apps</mat-icon><label fxHide.md="true" fxHide.sm="true">
+                  Work</label>
               </div>
               <p>
-                <a href="#" class="gold" style="color:#915907">Try premium for free</a>
+                <a href="#" class="gold" style="color:#915907;">Try premium for free</a>
               </p>
             </div>
           </div>
